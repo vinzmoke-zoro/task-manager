@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Update</title>
+    <link rel="stylesheet" type="text/css" href="/css/ctask.css">
+</head>
+<body>
+    <div class="container">
+        {{>header}}
+        <div id="field2">
+            <h1>Task</h1>
+    <input id="title" type="text" name="title" placeholder="title"><br>
+    <textarea id="description" type="text" name="description" placeholder="description" cols="30" rows="10"></textarea><br>
+    <label id="comp">Completed : </label>
+    <input id="true" class="radio" type="radio" name="completed"><label class="completed" for="true">Yes</label>
+    <input id="false" class="radio" type="radio" name="completed"><label class="completed" for="false">No</label><br>
+    <form action="/tasks/read" method="GET">
+    <button id="cancel" type="submit">Cancel</button>
+    </form>
+    <form action="/tasks/read" method="GET">
+    <button id="updatez" type="submit" onclick="update()">Update</button>
+    </form>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="/js/update.js"></script>
+</body>
+</html>

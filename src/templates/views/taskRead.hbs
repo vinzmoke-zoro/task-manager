@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/taskread.css">
+</head>
+<body>
+    <div class="container">
+    {{>header}}
+        <label class="sorts" for="sortby" id="sort">Sort By : </label>
+        <select class="sorts" name="sortby" id="sortby" onchange="changeOpt()">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="incomplete">Incomplete</option>
+        </select>
+        <form action="/tasks" method="GET">
+        <div id="new">
+        <button type="submit"><img src="/images/google-plus.svg"></button><br>
+        <span>New Task</span>
+        </div>
+        </form>
+    <table id="myTable">
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Completed</th>
+            <th>Delete</th>
+            <th>Edit</th>
+        </tr>
+        {{#each taskArr}}
+        <tr id="{{this.id}}">
+              <td>{{this.title}}</td>
+            <td>{{this.description}}</td>
+            <td class="complete">{{this.completed}}</td>
+            <td><button class="delete" onclick="x('{{this.id}}')"><img class="tabi" src="/images/recycle-bin.svg"></button></td>
+            <form action="/tasks/update/{{this.id}}" method="GET">
+            <td><button class="update" type="submit"><img class="tabi" src="/images/pencil.svg"></button></td>
+            </form>
+        </tr>
+    {{/each}}
+    </table>
+    </div>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html>

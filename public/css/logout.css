@@ -1,0 +1,54 @@
+body{
+    background-image: url('/images/plank.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+}
+#main{
+    flex-grow: 1;
+}
+header{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.678);
+    height: 80px;
+    border-bottom: 1px solid white;
+    margin-bottom: 5%;
+}
+#head{
+    color: white;
+    line-height: 80px;
+}
+#head a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 6%;
+}
+#head a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    font-size: 18px;
+    border-top: 1px solid white;
+    text-align: center;
+}
+button{
+    background: rgba(0, 0, 0, 0.404);
+    color: white;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 50%;
+    margin-top: 2%;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}

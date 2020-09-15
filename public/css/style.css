@@ -1,0 +1,120 @@
+body{
+    background: url('/images/notebook.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 28px;
+}
+.btn{
+    width: 15%;
+    height: 60px;
+    font-size: 40px;
+    float: left;
+    margin: 10% 0;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+#in{
+    margin-left: 5%;
+}
+#up{
+     margin-left: 32%; 
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    font-size: 25px;
+
+}
+#foothr{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    margin: 0 auto;
+}
+#main{
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.76);
+
+}
+
+@media(max-width:600px){
+    body{
+        background: url('/images/notebook.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;    text-align: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        color: rgb(255, 255, 255);
+    }
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .btn{
+        text-align: center;
+        width: 25%;
+        height: 45px;
+        font-size: 25px;
+        float: left;
+        margin: 10% auto;
+        cursor: pointer;
+        border: 2px solid white;
+        background-color: rgba(0, 0, 0, 0.404);
+        color: white;
+    }
+    .btn:hover{
+        background-color: white;
+        color: black;
+    }
+    #in{
+        margin-left: 5%;
+    }
+    #up{
+         margin-left: 22%; 
+    }
+    footer{
+        background-color: rgba(0, 0, 0, 0.76);
+        color: rgb(255, 255, 255);
+        padding: 1%;
+        font-size: 18px;
+    
+    }
+    #foothr{
+        background-color: rgb(255, 255, 255);
+        color: white;
+        margin: 0 auto;
+    }
+    #main{
+        flex-grow: 1;
+        background-color: rgba(0, 0, 0, 0.76);
+    
+    }
+    
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <div id="main">
+    <h1>Task Manager</h1><hr>
+    <h4>Get started by signing up!</h4>
+    <form action="/users">
+    <button class="btn" id="up" type="submit">Signup</button>
+    </form>
+        <form action="/users/login">
+    <button class="btn" id="in" type="submit">Login</button>
+    </form>
+    </div>
+    <hr id="foothr">
+    {{>footer}}
+</body>
+</html>

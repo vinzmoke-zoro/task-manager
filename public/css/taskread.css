@@ -1,0 +1,168 @@
+body{
+    background-color: rgb(9, 6, 51);
+     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+}
+
+table{
+    width: 100%;
+}
+table, th, td{
+    border: 1px solid rgb(163, 163, 163);
+    font-size: large;
+}
+
+td{
+    text-align: center;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.678);
+    height: 100px;
+    border-bottom: 1px solid white;
+}
+#head{
+    color: white;
+    line-height: 100px;
+}
+#head a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 0 6%;
+}
+#head a:hover{
+    text-decoration: underline;
+}
+.container{
+    flex-grow: 1;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    font-size: 25px;
+    border-top: 1px solid white;
+}
+button{
+    background:none;
+    border:none;
+    cursor:pointer;
+    outline: none;
+}
+#new{
+    float: right;
+    margin: 2%;
+    outline: none;
+}
+#new img{
+    height: 50px;
+    width: 50px;
+}
+
+.sorts{
+    float: left;
+    margin: 5% 2% 2% 2%;
+}
+#sort{
+    font-size: 24px;
+}
+#sortby{
+    width: 20%;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.tabi{
+    height: 20px;
+    width: 20px;
+}
+@media(max-width:600px){
+    body{
+        background-color: rgb(9, 6, 51);
+         text-align: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        color: rgb(255, 255, 255);
+    }
+    
+    table{
+        width: 100%;
+    }
+    table, th, td{
+        border: 1px solid rgb(163, 163, 163);
+        font-size: small;
+        font-weight: lighter;
+    }
+    
+    td{
+        text-align: center;
+    }
+    header{
+        background-color: rgba(0, 0, 0, 0.678);
+        height: 80px;
+        border-bottom: 1px solid white;
+    }
+    #head{
+        color: white;
+        line-height: 80px;
+    }
+    #head a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        margin: 0 6%;
+    }
+    #head a:hover{
+        text-decoration: underline;
+    }
+    .container{
+        flex-grow: 1;
+    }
+    
+    footer{
+        background-color: rgba(0, 0, 0, 0.76);
+        color: rgb(255, 255, 255);
+        padding: 1%;
+        font-size: 18px;
+        border-top: 1px solid white;
+    }
+    button{
+        background:none;
+        border:none;
+        cursor:pointer;
+        outline: none;
+    }
+    #new{
+        float: right;
+        margin: 2%;
+        outline: none;
+    }
+    #new img{
+        height: 30px;
+        width: 30px;
+    }
+    
+    .sorts{
+        float: left;
+        margin: 8% 2% 2% 2%;
+    }
+    #sort{
+        font-size: 18px;
+    }
+    #sortby{
+        width: 20%;
+        height: 25px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .tabi{
+        height: 20px;
+        width: 20px;
+    }
+    
+}

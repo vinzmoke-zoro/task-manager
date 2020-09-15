@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+    <link rel="stylesheet" type="text/css" href="/css/ctask.css">
+</head>
+<body>
+    <div class="container">
+    {{>header}}
+    <div id="field">
+    <h1>Task</h1>
+    <form action="/tasks/post" method="POST">
+    <input id="title" name="title" placeholder="title" type="text"><br>
+    <textarea id="description" name="description" cols="30" rows="10" placeholder="description"></textarea><br>
+    <label id="comp" for="completed">Completed : </label>
+  <input class="radio" type="radio" name="completed" value="true"> <label class="completed" for="completed">Yes</label>
+     <input class="radio" type="radio" name="completed" value="false"><label class="completed" for="completed">No</label><br>
+    <button id="create" type="submit">Create</button></form>
+    </div>
+    </div>
+    {{!-- <form action="/tasks/read" method="GET">
+    <button type="submit">See your tasks</button></form> --}}
+    {{>footer}}
+</body>
+</html>

@@ -1,0 +1,162 @@
+body{
+    background-image: url('/images/tech.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+}
+h1{
+    text-align: center;
+}
+.main{
+    flex-grow: 1;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    font-size: 25px;
+    border-top: 1px solid white;
+    text-align: center;
+}
+header{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.678);
+    height: 100px;
+    border-bottom: 1px solid white;
+    margin-bottom: 5%;
+}
+#head{
+    color: white;
+    line-height: 100px;
+}
+#head a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 0 6%;
+}
+#head a:hover{
+    text-decoration: underline;
+}
+#cont{
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.733);
+    border-radius: 30px;
+    width: 70%;
+    font-size: larger;
+    overflow: hidden;
+}
+img{
+    float: right;
+    width: 160px;
+    height: 160px;
+    margin-right: 10%;
+    border: 1px solid rgb(255, 196, 0);
+    border-radius: 10%;
+}
+#cont2{
+    margin-left: 10%;
+}
+button{
+    width: 30%;
+    height: 50px;
+    float: left;
+    margin: 10% 0 5% 0;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+#del{
+    margin-left: 5%;
+}
+@media(max-width:600px){
+    body{
+        background-image: url('/images/tech.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        color: rgb(255, 255, 255);
+    }
+    h1{
+        text-align: center;
+    }
+    .main{
+        flex-grow: 1;
+    }
+    footer{
+        background-color: rgba(0, 0, 0, 0.76);
+        color: rgb(255, 255, 255);
+        padding: 1%;
+        font-size: 18px;
+        border-top: 1px solid white;
+        text-align: center;
+    }
+    header{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.678);
+        height: 80px;
+        border-bottom: 1px solid white;
+        margin-bottom: 5%;
+    }
+    #head{
+        color: white;
+        line-height: 80px;
+    }
+    #head a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        margin: 0 6%;
+    }
+    #head a:hover{
+        text-decoration: underline;
+    }
+    #cont{
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.733);
+        border-radius: 30px;
+        width: 70%;
+        font-size: small;
+        overflow: hidden;
+    }
+    img{
+        float: right;
+        width: 80px;
+        height: 80px;
+        margin-right: 10%;
+        border: 1px solid rgb(255, 196, 0);
+        border-radius: 10%;
+    }
+    #cont2{
+        margin-left: 10%;
+    }
+    button{
+        width: 40%;
+        height: 40px;
+        float: left;
+        margin: 40% 0 5% 0;
+        cursor: pointer;
+        font-size: 14px;
+        color: white;
+        border: 2px solid white;
+        background-color: rgba(0, 0, 0, 0.404);
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+    #del{
+        margin-left: 5%;
+    }    
+}

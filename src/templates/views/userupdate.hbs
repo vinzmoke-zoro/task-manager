@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update User</title>
+    <link rel="stylesheet" type="text/css" href="/css/userupdate.css">
+</head>
+<body>
+    <div id="main">
+    {{>header}}
+    <div id="field">
+        <div id="image">
+    <form action="/users/me/avatar" method="GET">
+    <img src="data:image/png;base64, {{this.image}}" onerror="pic()"><br>
+    <button type="submit">Add/change avatar</button>
+    </form>
+    <form action="/users/me/update" method="GET">
+    <button type="submit" onclick="deleteavatar()">Remove avatar</button>
+    </form>
+        </div>
+    <form action="/users/me" method="GET">
+    <input type="text" id="name" placeholder="Enter your name" value="{{this.name}}" required>
+    <input type="password" id="pass" placeholder="Enter your password" pattern=".{7,}" required title="7 characters minimum!">
+    <input type="number" id="age" placeholder="Enter your age" value="{{this.age}}" required><br>
+    <button type="submit" onclick="update()">Update</button>
+    </form>
+    </div>
+    </div>
+    {{>footer}}
+    <script src="/js/userupdate.js"></script>
+</body>
+</html>

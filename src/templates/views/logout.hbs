@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link rel="stylesheet" type="text/css" href="/css/logout.css">
+</head>
+<body>
+    <div id="main">
+    {{>header}}
+    <form action="/users/logout" method="POST">
+    <button type="submit">Logout</button>
+    </form>
+    <form action="/users/logoutAll" method="POST">
+    <button type="submit">Logout from all devices</button>
+    </form>
+    </div>
+    {{>footer}}
+</body>
+</html>

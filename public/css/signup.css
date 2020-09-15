@@ -1,0 +1,143 @@
+body{
+    background: url('/images/notebook2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;   
+     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+}
+#field p{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(163, 255, 250);
+    font-size: 18px;
+}
+a:hover{
+    text-decoration: underline;
+}
+#login{
+    padding-bottom: 5%;
+}
+.container{
+    flex-grow: 1;
+}
+#field{
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 30%;
+    margin: 0 auto;
+}
+#fieldname{
+    padding-top: 5%;
+}
+input{
+    margin: 1% 1%;
+    height: 40px;
+    width: 90%;
+    font-size: 20px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+}
+::placeholder{
+    font-size: 20px;
+    color: rgb(190, 190, 190);
+}
+button{
+    width: 90%;
+    height: 60px;
+    font-size: 30px;
+    margin: 7% 0 1% 0;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    font-size: 25px;
+}
+
+@media(max-width:600px){
+    body{
+        background: url('/images/notebook2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;   
+         text-align: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        color: rgb(255, 255, 255);
+    }
+    #field p{
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(163, 255, 250);
+        font-size: 18px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    #login{
+        padding-bottom: 5%;
+    }
+    .container{
+        flex-grow: 1;
+    }
+    #field{
+        background-color: rgba(0, 0, 0, 0.575);
+        width: 70%;
+        margin: 0 auto;
+    }
+    #fieldname{
+        padding-top: 5%;
+    }
+    input{
+        margin: 1% 1%;
+        height: 30px;
+        width: 90%;
+        font-size: 18px;
+        background: none;
+        border: none;
+        border-bottom: 2px solid white;
+        outline: none;
+        color: white;
+    }
+    ::placeholder{
+        font-size: 18px;
+        color: rgb(190, 190, 190);
+    }
+    button{
+        width: 90%;
+        height: 40px;
+        font-size: 20px;
+        margin: 7% 0 1% 0;
+        cursor: pointer;
+        border: 2px solid white;
+        background-color: rgba(0, 0, 0, 0.404);
+        color: white;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+    footer{
+        background-color: rgba(0, 0, 0, 0.76);
+        color: rgb(255, 255, 255);
+        padding: 1%;
+        font-size: 18px;
+    }
+}

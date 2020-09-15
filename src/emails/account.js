@@ -26,7 +26,7 @@ const mailOptions = {
     from : 'imtiazrahman2002@gmail.com',
     to : email,
     subject : 'Your account has been successfully removed!',
-    text : `Hey ${name}.You have recently deleted your account on my task manager app.I am really sorry if I have done something wrong :( It would be really humble of you to send me back a detailed feedback on why you deleted your account so that I can improve it further and make it upto your preferences.Thanks for staying with me :)`
+    text : `Hey ${name}.You have recently deleted your account on my task manager app.I am really sorry if I you didn't like the app.It would be really humble of you to send me back a detailed feedback on why you deleted your account so that I can improve it further and make it upto your preferences.Thanks for staying with me :)`
   }
 
  transporter.sendMail(mailOptions, (err, info) => {

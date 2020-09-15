@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="/css/profile.css">
+</head>
+<body>
+    <div class="main">
+    {{>header}}
+    <div id="cont">
+    <h1>Profile</h1>
+    <div id="cont2">
+    <img src="data:image/png;base64, {{this.image}}" onerror="pic()">
+    <h3>Name : {{this.User.name}}</h3>
+    <h3>Email : {{this.User.email}}</h3>
+    <h3>Age : {{this.User.age}}</h3>
+    <form action="/users/me/update" method="GET">
+    <button id="up" type="submit">Update</button>
+    </form>    
+    <form action="/" method="GET">
+    <button id="del" type="submit" onclick="deleteuser()">Delete account</button>
+    </form>
+    </div>
+    </div>
+    </div>
+    {{>footer}}
+    <script src="/js/profile.js"></script>
+</body>
+</html>
